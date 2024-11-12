@@ -67,7 +67,7 @@ table {
   .hero {
 	background: url('../images/forest.png') no-repeat center center;
 	background-size: cover;
-	color: rgb(255, 255, 255);
+	color: white;
 	text-align: center;
 	padding: 50px 20px;
   }
@@ -137,36 +137,57 @@ table {
 	border-radius: 5px;
   }
 
-  /* Algemene styling voor het contactgedeelte */
+/* Algemene styling voor het contactgedeelte */
 .contact-section {
 	display: flex;
-	justify-content: space-between;
+	justify-content: center;
 	align-items: flex-start;
 	background-color: #d3d3d3;
 	padding: 20px;
 	gap: 20px;
   }
   
-  .contact-info, .contact-formulier {
+  .contact-info, .contact-form {
 	background-color: #fff;
 	padding: 20px;
 	box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
 	border-radius: 4px;
-	flex: 1;
   }
   
   .contact-info {
+	flex: 1;
 	color: #2c7a7b;
-	max-width: 300px;
   }
 
-  .contact-formulier {
-	width: 100%;
+  .contact-info h1 {
+	color:#2c7a7b;
+	font-size: 25px;
+	margin-bottom: 20px;
+  }
+  
+  .contact-info h2 {
 	color: #2c7a7b;
-  }  
-
-
-  .formulier {
+	font-size: 25px;
+	margin-left: 10px;
+  }
+  
+  .contact-info p {
+	font-size: 22px;
+	margin: 20px;
+	display: flex;
+	justify-content: space-between;
+  }
+  
+  .contact-form {
+	flex: 1;
+  }
+  
+  .contact-form h2 {
+	color: #2c7a7b;
+	margin-bottom: 15px;
+  }
+  
+  .form-group {
 	display: flex;
 	align-items: center;
 	margin-bottom: 10px;
@@ -175,14 +196,20 @@ table {
 	border-radius: 4px;
   }
   
-  .formulier input,
-  .formulier textarea {
+  .form-group input,
+  .form-group textarea {
 	width: 100%;
 	padding: 8px;
 	border: none;
 	outline: none;
 	font-size: 14px;
 	color: #333;
+  }
+  
+
+  
+  textarea {
+	min-height: 100px;
   }
   
   button[type="submit"] {
@@ -200,7 +227,8 @@ table {
   button[type="submit"]:hover {
 	background-color: #388e3c;
   }
-
+  
+    
   /* Footer */
   footer {
 	background-color: #333;
@@ -209,25 +237,31 @@ table {
 	font-size: 14px;
 	padding: 10px;
   }
-
-/* Styling knop "terug naar boven" */
+  
+  /* Style voor de 'Terug naar boven' knop */
 .back-to-top {
 	position: fixed;
-	bottom: 20px;
-	right: 20px;
-	background-color: #2c7a7b;
-	color: white;
-	padding: 5px 5px;
-	border-radius: 5px;
+	bottom: 20px;     /* 20px vanaf de onderkant van het scherm */
+	right: 20px;      /* 20px vanaf de rechterkant van het scherm */
+	background-color: #2c7a7b; /* Kleur van de knop */
+	color: white;     /* Tekstkleur */
+	padding: 10px;    /* Binnenruimte voor de knop */
+	border-radius: 50%; /* Ronde vorm */
 	text-align: center;
-	font-size: 40px;
-	text-decoration: none;
-	box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.3);
-	opacity: 0.7;
+	font-size: 24px;  /* Grootte van het pijltje */
+	text-decoration: none; /* Verwijder onderlijning */
+	box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.3); /* Schaduw voor diepte */
+	opacity: 0.7; /* Lichte transparantie */
 	transition: opacity 0.3s ease, background-color 0.3s ease;
   }
   
   .back-to-top:hover {
-	opacity: 1;
-	background-color: #285e61;
+	opacity: 1; /* Volledige zichtbaarheid bij hover */
+	background-color: #285e61; /* Donkerdere kleur bij hover */
   }
+
+  .back-to-top {
+	display: none; /* Verberg standaard de knop */
+  }
+  
+  
