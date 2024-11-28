@@ -46,6 +46,9 @@ table {
 	border-collapse: collapse;
 	border-spacing: 0;
 }
+html {
+    scroll-behavior: smooth ;
+}
 
 /* Algemeen opmaak */
 * {
@@ -57,19 +60,21 @@ table {
   body {
 	font-family: Arial, sans-serif;
 	font-size: 22px;
-	color: #333;
+	color: #000000;
 	width: 90%;
 	margin: 20px auto;
-	background-color: #f5f5f5;
+	background-color: #98D99A;
   }
   
-  /* Hero-afbeelding */
-  .hero {
+  /* afbeelding header */
+  .hoofding {
 	background: url('../images/forest.png') no-repeat center center;
 	background-size: cover;
 	color: white;
 	text-align: center;
 	padding: 50px 20px;
+	border-top-left-radius: 35px;
+	border-top-right-radius: 35px;
   }
   
   header h1, header p {
@@ -80,16 +85,19 @@ table {
   /* Navigatiebalk */
   nav {
 	background-color: #333;
+	border-bottom-left-radius: 35px;
+	border-bottom-right-radius: 35px;
   }
   
   nav ul {
 	display: flex;
 	list-style: none;
 	justify-content: center;
+	height: 53px;
   }
   
   nav ul li {
-	margin: 0 15px;
+	margin:15px;
   }
   
   nav ul li a {
@@ -100,25 +108,44 @@ table {
   
   nav ul li a:hover {
 	background-color: #555;
-	border-radius: 5px;
+	border-radius: 10px;
   }
   
   /* Secties */
   section {
 	padding: 20px;
 	margin-bottom: 20px;
+	border-radius: 35px;
   }
-  
+
+  .person {
+	display: flex;
+	padding: 15px;
+	align-items: center;
+	gap: 20px;
+  }
+
   section:nth-child(even) {
-	background-color: #f0f0f0;
+	background-color: #B2D7EE;
   }
   
   section h2 {
 	color: #2c7a7b;
+	font-size: 35px;
+  }
+
+  section p {
+	color: #555555;
   }
   
+ .climate-alinea {
+	background-image:url(../images/climate_change.jpg);
+	background-size: cover;
+	padding: 20px;
+ }
+
   section img {
-	max-width: 100%;
+	max-width: 10%;
 	border-radius: 5px;
 	border: 1px solid #ddd;
 	margin: 15px 0;
@@ -133,8 +160,8 @@ table {
   .solution {
 	flex: 1;
 	padding: 10px;
-	background-color: #e2e8f0;
-	border-radius: 5px;
+	background-color: #B2D7EE;
+	border-radius: 27px;
   }
 
 /* Algemene styling voor het contactgedeelte */
