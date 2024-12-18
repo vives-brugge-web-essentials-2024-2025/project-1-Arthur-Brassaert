@@ -134,14 +134,25 @@ html {
 	font-size: 35px;
   }
 
-  section p {
-	color: #555555;
+ section h4 {
+	color: #ffffff;
+	font-size: 35px;
+ }
+
+  section h5 {
+	color: #ffffff;
+	font-size: 25px;
+  }
+
+  section p2 {
+	color: #a9a9a9;
   }
   
- .climate-alinea {
-	background-image:url(../images/climate_change.jpg);
+ .climate-change {
+	background-image:url(../images/dark_forest.jpg);
 	background-size: cover;
 	padding: 20px;
+	border-radius: 25px;
  }
 
   section img {

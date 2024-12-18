@@ -1,0 +1,305 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+html {
+    scroll-behavior: smooth ;
+}
+
+/* Algemeen opmaak */
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+  }
+  
+  body {
+	font-family: Arial, sans-serif;
+	font-size: 22px;
+	color: #000000;
+	width: 90%;
+	margin: 20px auto;
+	background-color: #98D99A;
+  }
+  
+  /* afbeelding header */
+  .hoofding {
+	background: url('../images/forest.png') no-repeat center center;
+	background-size: cover;
+	color: white;
+	text-align: center;
+	padding: 50px 20px;
+	border-top-left-radius: 35px;
+	border-top-right-radius: 35px;
+  }
+  
+  header h1, header p {
+	background-color: rgba(0, 0, 0, 0.5);
+	padding: 10px;
+  }
+  
+  /* Navigatiebalk */
+  nav {
+	background-color: #333;
+	border-bottom-left-radius: 35px;
+	border-bottom-right-radius: 35px;
+  }
+  
+  nav ul {
+	display: flex;
+	list-style: none;
+	justify-content: center;
+	height: 53px;
+  }
+  
+  nav ul li {
+	margin:15px;
+  }
+  
+  nav ul li a {
+	color: white;
+	text-decoration: none;
+	padding: 10px 15px;
+  }
+  
+  nav ul li a:hover {
+	background-color: #555;
+	border-radius: 10px;
+  }
+  
+  /* Secties */
+  section {
+	padding: 20px;
+	margin-bottom: 20px;
+	border-radius: 35px;
+  }
+
+  .person {
+	display: flex;
+	padding: 15px;
+	align-items: center;
+	gap: 20px;
+  }
+
+  section:nth-child(even) {
+	background-color: #B2D7EE;
+  }
+  
+  section h2 {
+	color: #2c7a7b;
+	font-size: 35px;
+  }
+
+ section h4 {
+	color: #ffffff;
+	font-size: 35px;
+ }
+
+  section h5 {
+	color: #ffffff;
+	font-size: 25px;
+  }
+
+  section p2 {
+	color: #a9a9a9;
+  }
+  
+ .climate-change {
+	background-image:url(../images/dark_forest.jpg);
+	background-size: cover;
+	padding: 20px;
+	border-radius: 25px;
+ }
+
+  section img {
+	max-width: 10%;
+	border-radius: 5px;
+	border: 1px solid #ddd;
+	margin: 15px 0;
+  }
+  
+  /* Solutions in sectie 3 */
+  .solutions-container {
+	display: flex;
+	gap: 20px;
+  }
+  
+  .solution {
+	flex: 1;
+	padding: 10px;
+	background-color: #B2D7EE;
+	border-radius: 27px;
+  }
+
+/* Algemene styling voor het contactgedeelte */
+.contact-section {
+	display: flex;
+	justify-content: center;
+	align-items: flex-start;
+	background-color: #d3d3d3;
+	padding: 20px;
+	gap: 20px;
+  }
+  
+  .contact-info, .contact-form {
+	background-color: #fff;
+	padding: 20px;
+	box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+	border-radius: 4px;
+  }
+  
+  .contact-info {
+	flex: 1;
+	color: #2c7a7b;
+  }
+
+  .contact-info h1 {
+	color:#2c7a7b;
+	font-size: 25px;
+	margin-bottom: 20px;
+  }
+  
+  .contact-info h2 {
+	color: #2c7a7b;
+	font-size: 25px;
+	margin-left: 10px;
+  }
+  
+  .contact-info p {
+	font-size: 22px;
+	margin: 20px;
+	display: flex;
+	justify-content: space-between;
+  }
+  
+  .contact-form {
+	flex: 1;
+  }
+  
+  .contact-form h2 {
+	color: #2c7a7b;
+	margin-bottom: 15px;
+  }
+  
+  .form-group {
+	display: flex;
+	align-items: center;
+	margin-bottom: 10px;
+	background-color: #4caf50;
+	padding: 5px;
+	border-radius: 4px;
+  }
+  
+  .form-group input,
+  .form-group textarea {
+	width: 100%;
+	padding: 8px;
+	border: none;
+	outline: none;
+	font-size: 14px;
+	color: #333;
+  }
+  
+
+  
+  textarea {
+	min-height: 100px;
+  }
+  
+  button[type="submit"] {
+	background-color: #4caf50;
+	color: white;
+	padding: 10px 20px;
+	border: none;
+	font-size: 16px;
+	cursor: pointer;
+	border-radius: 4px;
+	transition: background-color 0.3s ease;
+	width: 100%;
+  }
+  
+  button[type="submit"]:hover {
+	background-color: #388e3c;
+  }
+  
+    
+  /* Footer */
+  footer {
+	background-color: #333;
+	color: white;
+	text-align: center;
+	font-size: 14px;
+	padding: 10px;
+  }
+  
+  /* Style voor de 'Terug naar boven' knop */
+.back-to-top {
+	position: fixed;
+	bottom: 20px;     /* 20px vanaf de onderkant van het scherm */
+	right: 20px;      /* 20px vanaf de rechterkant van het scherm */
+	background-color: #2c7a7b; /* Kleur van de knop */
+	color: white;     /* Tekstkleur */
+	padding: 10px;    /* Binnenruimte voor de knop */
+	border-radius: 50%; /* Ronde vorm */
+	text-align: center;
+	font-size: 24px;  /* Grootte van het pijltje */
+	text-decoration: none; /* Verwijder onderlijning */
+	box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.3); /* Schaduw voor diepte */
+	opacity: 0.7; /* Lichte transparantie */
+	transition: opacity 0.3s ease, background-color 0.3s ease;
+  }
+  
+  .back-to-top:hover {
+	opacity: 1; /* Volledige zichtbaarheid bij hover */
+	background-color: #285e61; /* Donkerdere kleur bij hover */
+  }
+
+  .back-to-top {
+	display: none; /* Verberg standaard de knop */
+  }
+  
+  
